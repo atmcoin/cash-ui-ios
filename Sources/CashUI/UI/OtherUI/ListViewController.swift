@@ -90,16 +90,13 @@ extension ListViewController: UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        containerViewTapped(tableView)
         let atm = self.filteredList![indexPath.row] as AtmMachine
         let parent = self.parent as! AtmLocationsViewController
         parent.sendVerificationVC?.setAtmInfo(atm)
         parent.verifyCashCodeVC?.atmMachineTitleLabel.text = atm.addressDesc
         parent.sendVerificationVC?.showView()
-        parent.searchBar.resignFirstResponder()
-
         parent.verifyCashCodeVC!.atm = atm
-        
-        containerViewTapped(tableView)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
