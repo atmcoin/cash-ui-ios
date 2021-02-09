@@ -8,7 +8,7 @@ class LoadingButton: UIButton {
 
     @IBInspectable var indicatorColor: UIColor = .black
 
-    var originalButtonImage: UIImage? = UIImage(named: "Refresh")
+    var originalButtonImage: UIImage? = UIImage(named: "Refresh", in: .module, compatibleWith: nil)
     var activityIndicator: UIActivityIndicatorView!
 
     func showLoading() {

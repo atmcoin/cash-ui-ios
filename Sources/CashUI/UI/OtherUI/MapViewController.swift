@@ -155,10 +155,10 @@ extension MapViewController: MKMapViewDelegate {
         }
         
         if annot.atm.redemption!.boolValue {
-            annotationView?.image = UIImage(named: "atmWhite")
+            annotationView?.image = UIImage(named: "atmWhite", in: .module, compatibleWith: nil)
         }
         else {
-            annotationView?.image = UIImage(named: "atmGrey")
+            annotationView?.image = UIImage(named: "atmGrey", in: .module, compatibleWith: nil)
         }
         
         return annotationView

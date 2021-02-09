@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3919A092579411E009C6569 /* ListViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3919A082579411E009C6569 /* ListViewTableViewCell.xib */; };
 		B3A9EA1D2527948D00C18CCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9EA1C2527948D00C18CCD /* AppDelegate.swift */; };
 		B3A9EA1F2527948D00C18CCD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9EA1E2527948D00C18CCD /* SceneDelegate.swift */; };
 		B3A9EA212527948D00C18CCD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A9EA202527948D00C18CCD /* FirstViewController.swift */; };
@@ -16,22 +15,9 @@
 		B3A9EA282527948F00C18CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA272527948F00C18CCD /* Assets.xcassets */; };
 		B3A9EA2B2527948F00C18CCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA292527948F00C18CCD /* LaunchScreen.storyboard */; };
 		B3A9EA342527954200C18CCD /* CashUI in Frameworks */ = {isa = PBXBuildFile; productRef = B3A9EA332527954200C18CCD /* CashUI */; };
-		B3A9EA662527C33400C18CCD /* SendVerificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA582527C33400C18CCD /* SendVerificationView.xib */; };
-		B3A9EA672527C33400C18CCD /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA592527C33400C18CCD /* ActivityView.xib */; };
-		B3A9EA682527C33400C18CCD /* AtmLocationsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA5A2527C33400C18CCD /* AtmLocationsView.xib */; };
-		B3A9EA692527C33400C18CCD /* VerifyCashCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA5B2527C33400C18CCD /* VerifyCashCodeView.xib */; };
-		B3A9EA6A2527C33400C18CCD /* WithdrawalStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA5C2527C33400C18CCD /* WithdrawalStatusView.xib */; };
-		B3A9EA6B2527C33400C18CCD /* ListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA5D2527C33400C18CCD /* ListView.xib */; };
-		B3A9EA6C2527C33400C18CCD /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA5E2527C33400C18CCD /* ActivityTableViewCell.xib */; };
-		B3A9EA6D2527C33400C18CCD /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA5F2527C33400C18CCD /* MenuView.xib */; };
-		B3A9EA6E2527C33400C18CCD /* AtmInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA602527C33400C18CCD /* AtmInfoView.xib */; };
-		B3A9EA6F2527C33400C18CCD /* SupportListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA612527C33400C18CCD /* SupportListStoryboard.storyboard */; };
-		B3A9EA702527C33400C18CCD /* support.json in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA632527C33400C18CCD /* support.json */; };
-		B3A9EA712527C33400C18CCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A9EA652527C33400C18CCD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B3919A082579411E009C6569 /* ListViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewTableViewCell.xib; sourceTree = "<group>"; };
 		B3A9EA192527948D00C18CCD /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A9EA1C2527948D00C18CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3A9EA1E2527948D00C18CCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,18 +27,6 @@
 		B3A9EA272527948F00C18CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3A9EA2A2527948F00C18CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3A9EA2C2527948F00C18CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3A9EA582527C33400C18CCD /* SendVerificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendVerificationView.xib; sourceTree = "<group>"; };
-		B3A9EA592527C33400C18CCD /* ActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
-		B3A9EA5A2527C33400C18CCD /* AtmLocationsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtmLocationsView.xib; sourceTree = "<group>"; };
-		B3A9EA5B2527C33400C18CCD /* VerifyCashCodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VerifyCashCodeView.xib; sourceTree = "<group>"; };
-		B3A9EA5C2527C33400C18CCD /* WithdrawalStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithdrawalStatusView.xib; sourceTree = "<group>"; };
-		B3A9EA5D2527C33400C18CCD /* ListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListView.xib; sourceTree = "<group>"; };
-		B3A9EA5E2527C33400C18CCD /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
-		B3A9EA5F2527C33400C18CCD /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
-		B3A9EA602527C33400C18CCD /* AtmInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtmInfoView.xib; sourceTree = "<group>"; };
-		B3A9EA612527C33400C18CCD /* SupportListStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SupportListStoryboard.storyboard; sourceTree = "<group>"; };
-		B3A9EA632527C33400C18CCD /* support.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = support.json; sourceTree = "<group>"; };
-		B3A9EA652527C33400C18CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3A9EA722527C38700C18CCD /* cash-ui-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "cash-ui-ios"; path = ../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				B3A9EA722527C38700C18CCD /* cash-ui-ios */,
-				B3A9EA552527C33400C18CCD /* JustCash */,
 				B3A9EA1C2527948D00C18CCD /* AppDelegate.swift */,
 				B3A9EA1E2527948D00C18CCD /* SceneDelegate.swift */,
 				B3A9EA202527948D00C18CCD /* FirstViewController.swift */,
@@ -99,58 +72,6 @@
 				B3A9EA2C2527948F00C18CCD /* Info.plist */,
 			);
 			path = SampleApp;
-			sourceTree = "<group>";
-		};
-		B3A9EA552527C33400C18CCD /* JustCash */ = {
-			isa = PBXGroup;
-			children = (
-				B3A9EA562527C33400C18CCD /* Resources */,
-			);
-			path = JustCash;
-			sourceTree = "<group>";
-		};
-		B3A9EA562527C33400C18CCD /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B3A9EA572527C33400C18CCD /* XIB */,
-				B3A9EA622527C33400C18CCD /* Other */,
-				B3A9EA642527C33400C18CCD /* Assets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		B3A9EA572527C33400C18CCD /* XIB */ = {
-			isa = PBXGroup;
-			children = (
-				B3919A082579411E009C6569 /* ListViewTableViewCell.xib */,
-				B3A9EA582527C33400C18CCD /* SendVerificationView.xib */,
-				B3A9EA592527C33400C18CCD /* ActivityView.xib */,
-				B3A9EA5A2527C33400C18CCD /* AtmLocationsView.xib */,
-				B3A9EA5B2527C33400C18CCD /* VerifyCashCodeView.xib */,
-				B3A9EA5C2527C33400C18CCD /* WithdrawalStatusView.xib */,
-				B3A9EA5D2527C33400C18CCD /* ListView.xib */,
-				B3A9EA5E2527C33400C18CCD /* ActivityTableViewCell.xib */,
-				B3A9EA5F2527C33400C18CCD /* MenuView.xib */,
-				B3A9EA602527C33400C18CCD /* AtmInfoView.xib */,
-				B3A9EA612527C33400C18CCD /* SupportListStoryboard.storyboard */,
-			);
-			path = XIB;
-			sourceTree = "<group>";
-		};
-		B3A9EA622527C33400C18CCD /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				B3A9EA632527C33400C18CCD /* support.json */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		B3A9EA642527C33400C18CCD /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				B3A9EA652527C33400C18CCD /* Assets.xcassets */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +104,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Giancarlo Pacheco";
 				TargetAttributes = {
 					B3A9EA182527948D00C18CCD = {
@@ -217,22 +138,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3A9EA692527C33400C18CCD /* VerifyCashCodeView.xib in Resources */,
-				B3A9EA6D2527C33400C18CCD /* MenuView.xib in Resources */,
 				B3A9EA2B2527948F00C18CCD /* LaunchScreen.storyboard in Resources */,
-				B3A9EA6C2527C33400C18CCD /* ActivityTableViewCell.xib in Resources */,
-				B3919A092579411E009C6569 /* ListViewTableViewCell.xib in Resources */,
-				B3A9EA712527C33400C18CCD /* Assets.xcassets in Resources */,
-				B3A9EA6B2527C33400C18CCD /* ListView.xib in Resources */,
-				B3A9EA6E2527C33400C18CCD /* AtmInfoView.xib in Resources */,
-				B3A9EA662527C33400C18CCD /* SendVerificationView.xib in Resources */,
 				B3A9EA282527948F00C18CCD /* Assets.xcassets in Resources */,
-				B3A9EA6F2527C33400C18CCD /* SupportListStoryboard.storyboard in Resources */,
-				B3A9EA702527C33400C18CCD /* support.json in Resources */,
-				B3A9EA672527C33400C18CCD /* ActivityView.xib in Resources */,
-				B3A9EA682527C33400C18CCD /* AtmLocationsView.xib in Resources */,
 				B3A9EA262527948D00C18CCD /* Main.storyboard in Resources */,
-				B3A9EA6A2527C33400C18CCD /* WithdrawalStatusView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +206,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -358,6 +267,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -391,13 +301,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQWXFE3A47;
+				DEVELOPMENT_TEAM = J8785B8QGT;
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cash.just.wallet.SampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = cash.just.wallet2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -409,13 +319,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HQWXFE3A47;
+				DEVELOPMENT_TEAM = J8785B8QGT;
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cash.just.wallet.SampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = cash.just.wallet2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,7 +361,7 @@
 			repositoryURL = "https://github.com/atmcoin/cash-ui-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.5;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

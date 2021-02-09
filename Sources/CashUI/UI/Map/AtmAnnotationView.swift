@@ -68,7 +68,7 @@ class AtmAnnotationView: MKAnnotationView {
     }
     
     func loadAtmInfoView() -> AtmInfoView? {
-        let bundle = Bundle.init(for: AtmInfoView.self)
+        let bundle = Bundle.module
         if let views = bundle.loadNibNamed("AtmInfoView", owner: self, options: nil) as? [AtmInfoView], views.count > 0 {
             let atmInfoView = views.first!
             atmInfoView.delegate = self.atmMarkerAnnotationViewDelegate

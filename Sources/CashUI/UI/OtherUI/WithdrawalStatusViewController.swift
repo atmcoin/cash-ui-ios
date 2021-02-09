@@ -179,7 +179,7 @@ extension WithdrawalStatusViewController: MKMapViewDelegate {
         
         if annotationView == nil {
             annotationView = AtmAnnotationView(annotation: annotation, reuseIdentifier: kAtmAnnotationViewReusableIdentifier)
-            annotationView?.image = UIImage(named: "atmWhite")
+            annotationView?.image = UIImage(named: "atmWhite", in: .module, compatibleWith: nil)
         } else {
             annotationView!.annotation = annotation
         }

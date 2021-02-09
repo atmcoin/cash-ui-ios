@@ -97,8 +97,7 @@ class AtmLocationsViewController: UIViewController {
     }()
     
     private lazy var listVC: ListViewController = {
-        let bundle = Bundle.init(for: ListViewController.self)
-        var viewController = ListViewController.init(nibName: "ListView", bundle: bundle)
+        var viewController = ListViewController.init(nibName: "ListView", bundle: .module)
         return viewController
     }()
     
@@ -217,14 +216,12 @@ class AtmLocationsViewController: UIViewController {
     }
     
     func addSendVerificationView() {
-        let bundle = Bundle.init(for: SendVerificationCodeViewController.self)
-        sendVerificationVC = SendVerificationCodeViewController.init(nibName: "SendVerificationView", bundle: bundle)
+        sendVerificationVC = SendVerificationCodeViewController.init(nibName: "SendVerificationView", bundle: .module)
         addSheetView(controller: sendVerificationVC!)
     }
     
     func addVerifyCashCodeView() {
-        let bundle = Bundle.init(for: VerifyCashCodeViewController.self)
-        verifyCashCodeVC = VerifyCashCodeViewController.init(nibName: "VerifyCashCodeView", bundle: bundle)
+        verifyCashCodeVC = VerifyCashCodeViewController.init(nibName: "VerifyCashCodeView", bundle: .module)
         addSheetView(controller: verifyCashCodeVC!)
     }
     
@@ -362,8 +359,7 @@ extension AtmLocationsViewController: ActionProtocol {
             
             CoreTransactionManager.updateTransaction(status: .Awaiting, address: cashCode.address!)
             
-            let bundle = Bundle.init(for: WithdrawalStatusViewController.self)
-            let withdrawalStatusVC = WithdrawalStatusViewController.init(nibName: "WithdrawalStatusView", bundle: bundle)
+            let withdrawalStatusVC = WithdrawalStatusViewController.init(nibName: "WithdrawalStatusView", bundle: .module)
             withdrawalStatusVC.transaction = CoreTransactionManager.getTransaction(for: cashCode.address!)
             self.present(withdrawalStatusVC, animated: true, completion: nil)
         })

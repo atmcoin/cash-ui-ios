@@ -14,7 +14,7 @@ extension NavigationControllerProtocol {
     }
     
     public func addCloseBarButtonItem(_ controller: UIViewController, target: Any?, action: Selector) {
-        guard let closeImage = UIImage(named: "Close") else { return }
+        guard let closeImage = UIImage(named: "Close", in: .module, compatibleWith: nil) else { return }
         let closeButton = UIButton.icon(image: closeImage, accessibilityLabel: "Close")
         closeButton.tintColor = .white
         closeButton.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 40, height: 40))
