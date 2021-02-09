@@ -20,8 +20,7 @@ public class AtmMenuViewController: UIViewController {
     var cellHeights: [CGFloat] = []
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        let bundle = Bundle.init(for: AtmMenuViewController.self)
-        super.init(nibName: "MenuView", bundle: bundle)
+        super.init(nibName: "MenuView", bundle: .module)
     }
     
     required init?(coder: NSCoder) {
@@ -41,15 +40,13 @@ public class AtmMenuViewController: UIViewController {
     }
     
     func setupActivityView() {
-        let bundle = Bundle.init(for: ActivityViewController.self)
-        activityViewController = ActivityViewController(nibName: "ActivityView", bundle: bundle)
+        activityViewController = ActivityViewController(nibName: "ActivityView", bundle: .module)
         activityViewController?.shouldShowCloseButton = false
         containerView.addSubview(activityViewController!.view)
     }
 
     @IBAction func showMap(_ sender: Any) {
-        let bundle = Bundle.init(for: AtmLocationsViewController.self)
-        let vc = AtmLocationsViewController(nibName: "AtmLocationsView", bundle: bundle)
+        let vc = AtmLocationsViewController(nibName: "AtmLocationsView", bundle: .module)
         navigationController?.pushViewController(vc, animated: true)
     }
 

@@ -26,7 +26,7 @@ public class SupportManager: NavigationControllerProtocol {
     }
     
     public func supportTopic(for topicId: String) -> TopicDetailViewController? {
-        let storyboard = UIStoryboard(name: "SupportListStoryboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "SupportListStoryboard", bundle: .module)
         let vc: TopicDetailViewController = storyboard.instantiateViewController(withIdentifier: "TopicDetailViewController") as! TopicDetailViewController
         vc.topic = client.support?.topic(for: topicId)
         return vc
@@ -41,7 +41,7 @@ public class SupportManager: NavigationControllerProtocol {
     }
     
     public func supportCategories() -> SupportListViewController? {
-        let storyboard = UIStoryboard(name: "SupportListStoryboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "SupportListStoryboard", bundle: .module)
         let vc: SupportListViewController = storyboard.instantiateViewController(withIdentifier: "SupportListViewController") as! SupportListViewController
         vc.client = client
         return vc

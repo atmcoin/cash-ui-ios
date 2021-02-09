@@ -77,7 +77,7 @@ public class ActivityViewController: UIViewController, UIAdaptivePresentationCon
     // MARK: Helpers
     private func setup() {
         self.view.backgroundColor = Theme.tertiaryBackground
-        let cellNib = UINib(nibName: "ActivityTableViewCell", bundle: nil)
+        let cellNib = UINib(nibName: "ActivityTableViewCell", bundle: .module)
         tableView.register(cellNib, forCellReuseIdentifier: kReusableIdentifier)
         tableView.backgroundColor = Theme.tertiaryBackground
         tableView.estimatedRowHeight = 199
@@ -134,8 +134,7 @@ extension ActivityViewController: UITableViewDataSource, UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let transaction = transactions[indexPath.row]
 
-        let bundle = Bundle.init(for: WithdrawalStatusViewController.self)
-        let withdrawalStatusVC = WithdrawalStatusViewController.init(nibName: "WithdrawalStatusView", bundle: bundle)
+        let withdrawalStatusVC = WithdrawalStatusViewController.init(nibName: "WithdrawalStatusView", bundle: .module)
         withdrawalStatusVC.transaction = transaction
         self.present(withdrawalStatusVC, animated: true, completion: nil)
     }

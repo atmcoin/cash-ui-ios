@@ -83,7 +83,7 @@ class ActionViewController: UIViewController {
     }
     
     public func addCloseButton() {
-        let image = UIImage(named: "Close")
+        let image = UIImage(named: "Close", in: .module, compatibleWith: nil)
         closeButton = UIButton.icon(image: image!, accessibilityLabel: "Close")
         self.view.addSubview(closeButton)
         closeButton.constrain([
@@ -97,7 +97,7 @@ class ActionViewController: UIViewController {
     }
     
     public func addInfoButton() {
-        let image = UIImage(named: "Faq")
+        let image = UIImage(named: "Faq", in: .module, compatibleWith: nil)
         infoButton = UIButton.icon(image:image!, accessibilityLabel: "Info")
         self.view.addSubview(infoButton)
         infoButton.constrain([

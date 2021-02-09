@@ -20,7 +20,7 @@ class ListViewController: UIViewController, ATMListFilter {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UINib(nibName: "ListViewTableViewCell", bundle: nil), forCellReuseIdentifier: reusableIdentifier)
+        tableView.register(UINib(nibName: "ListViewTableViewCell", bundle: .module), forCellReuseIdentifier: reusableIdentifier)
     }
     
     override func viewDidAppear(_ animated: Bool) {
