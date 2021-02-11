@@ -389,6 +389,7 @@ extension AtmLocationsViewController: ActionProtocol {
         case .sendVerificationCode:
             self.sendVerificationVC!.view.endEditing(true)
             self.sendVerificationVC!.hideView()
+            self.verifyCashCodeVC!.phoneNumber = self.sendVerificationVC?.phoneNumberTextField.text!
             self.verifyCashCodeVC!.showView()
             break
         case .cashCodeVerification:
