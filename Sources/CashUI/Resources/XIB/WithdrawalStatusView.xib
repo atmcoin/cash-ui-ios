@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,7 +15,6 @@
                 <outlet property="addressTitleLabel" destination="IuR-5X-nI4" id="1hQ-pk-OKg"/>
                 <outlet property="amountBTCLabel" destination="ADU-PE-Zi0" id="5Fc-Dx-Rnu"/>
                 <outlet property="amountUSDLabel" destination="OpX-mF-lM1" id="BqK-Rv-Cnu"/>
-                <outlet property="atmAddressLabel" destination="QyH-AR-NfE" id="5JN-98-qRZ"/>
                 <outlet property="atmLocationDescription" destination="vrm-S7-oWT" id="gHC-nB-dq3"/>
                 <outlet property="atmMapView" destination="JDP-KI-f72" id="3cd-Nz-yxI"/>
                 <outlet property="containerView" destination="vol-Lk-qff" id="bwk-cC-BbA"/>
@@ -35,7 +36,7 @@
                     </constraints>
                 </mapView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATM Machine Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrm-S7-oWT" userLabel="Location Label">
-                    <rect key="frame" x="103.5" y="271" width="207" height="31.5"/>
+                    <rect key="frame" x="104" y="271" width="206.5" height="31.5"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -82,9 +83,9 @@
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                         </imageView>
                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345-6789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndO-gd-7RI">
-                            <rect key="frame" x="108" y="54" width="198.5" height="42"/>
+                            <rect key="frame" x="107" y="54" width="200" height="42"/>
                             <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" systemColor="systemGreenColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -98,9 +99,9 @@
                         <constraint firstAttribute="bottom" secondItem="6kt-5w-mis" secondAttribute="bottom" id="or5-th-hfR"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-gB-bVU">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-gB-bVU">
                     <rect key="frame" x="20" y="521" width="374" height="33"/>
-                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" systemColor="linkColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Send">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,20 +116,21 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa3-96-Kds">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wa3-96-Kds">
                     <rect key="frame" x="0.0" y="44" width="414" height="207"/>
                     <connections>
                         <action selector="showMapDirections:" destination="-1" eventType="touchUpInside" id="4Oo-HU-33Q"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Machine address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyH-AR-NfE">
-                    <rect key="frame" x="142" y="312.5" width="130.5" height="20.5"/>
+                    <rect key="frame" x="142" y="312.5" width="130" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="vrm-S7-oWT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="2Ai-M5-2YZ"/>
                 <constraint firstItem="vol-Lk-qff" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2en-CT-EUf"/>
@@ -171,8 +173,18 @@
                 <constraint firstItem="ADU-PE-Zi0" firstAttribute="centerX" secondItem="4Le-MW-qrS" secondAttribute="centerX" id="qNJ-G7-XaV"/>
                 <constraint firstItem="xWV-4X-Fts" firstAttribute="top" secondItem="IuR-5X-nI4" secondAttribute="bottom" constant="8" id="zIp-L1-Lar"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
