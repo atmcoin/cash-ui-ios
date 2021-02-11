@@ -34,14 +34,22 @@ public class ActivityViewController: UIViewController, UIAdaptivePresentationCon
     
     public var shouldShowCloseButton: Bool = true
     
-    public override func awakeFromNib() {
-        super.awakeFromNib()
+    private func commonInit() {
         closeButton.tintColor = Theme.color(.icon)
         closeButton.imageEdgeInsets = UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
     }
     
+    override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: "ActivityView", bundle: .module)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
+        commonInit()
         setup()
         setupNavigationBar();
         
