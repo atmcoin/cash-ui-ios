@@ -65,6 +65,7 @@ class AtmInfoView: UIView {
         if self.bounds.contains(point) {
             if atm.redemption!.boolValue {
                 delegate?.detailsRequestedForAtm(atm: self.atm)
+                delegate = nil
             }
             return self
         }

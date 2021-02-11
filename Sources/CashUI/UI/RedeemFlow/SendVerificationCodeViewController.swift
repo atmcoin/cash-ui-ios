@@ -48,10 +48,15 @@ class SendVerificationCodeViewController: ActionViewController {
                                                                phoneNumber: phoneNumber,
                                                                email: "",
                                                                result: { (result) in
-            self.hideAnimated()
-            self.actionCallback?.withdraw(amount: self.amountToWithdrawTextField.text!)
-            self.actionCallback?.actiondDidComplete(action: .sendVerificationCode)
-            self.clearViews()
+                                                                switch result {
+                                                                case .success(_):
+                                                                    self.actionCallback?.withdraw(amount: self.amountToWithdrawTextField.text!)
+                                                                    self.actionCallback?.actiondDidComplete(action: .sendVerificationCode)
+                                                                case .failure(_):
+                                                                    self.showAlert(title: "Error", message: "Something went wrong! Please try again", completion: nil)
+                                                                }
+                                                                self.hideView()
+                                                                self.clearViews()
         })
         
         saveUserInfo(firstName: firstName, lastName: lastName, phoneNumber: phoneNumber)

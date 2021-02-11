@@ -9,6 +9,15 @@
           "revision": "39eb24585988ebcd145e229afefedb0348363706",
           "version": "5.0.0"
         }
+      },
+      {
+        "package": "CashUI",
+        "repositoryURL": "https://github.com/atmcoin/cash-ui-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "63803a73e959241a5d1a159fe5f07c5b3251d584",
+          "version": "5.0.0"
+        }
       }
     ]
   },

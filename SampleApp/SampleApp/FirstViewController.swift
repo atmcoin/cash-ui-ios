@@ -7,7 +7,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        CoreSessionManager.shared.start()
+        CoreSessionManager.shared.start(url: .Staging)
         CoreSessionManager.shared.delegate = self
     }
     

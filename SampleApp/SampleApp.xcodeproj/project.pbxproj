@@ -27,7 +27,6 @@
 		B3A9EA272527948F00C18CCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3A9EA2A2527948F00C18CCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3A9EA2C2527948F00C18CCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3A9EA722527C38700C18CCD /* cash-ui-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "cash-ui-ios"; path = ../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +60,6 @@
 		B3A9EA1B2527948D00C18CCD /* SampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				B3A9EA722527C38700C18CCD /* cash-ui-ios */,
 				B3A9EA1C2527948D00C18CCD /* AppDelegate.swift */,
 				B3A9EA1E2527948D00C18CCD /* SceneDelegate.swift */,
 				B3A9EA202527948D00C18CCD /* FirstViewController.swift */,
