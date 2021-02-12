@@ -35,7 +35,7 @@ class VerifyCashCodeViewController: ActionViewController {
                 break
             case .failure(let error):
                 let errorCode = error.code
-                var message = "Something went wrong! Please try again"
+                var message = "Something went wrong! Please try again."
                 if errorCode.isEmpty {
                     self.view.endEditing(true)
                     self.showAlert(title: "Error", message: message, completion: nil)
@@ -43,15 +43,15 @@ class VerifyCashCodeViewController: ActionViewController {
                 }
                 let cashErrorCode = CashCoreErrorCode(rawValue: Int(errorCode)!)!
                 if cashErrorCode == .wrongVerificationCode {
-                    message = "Wrong Code"
+                    message = "Verification word incorrect! Please review and enter it again."
                     self.tokenTextView.errorText = message
                 }
                 else {
                     if (cashErrorCode == .verificationCodeExpired) {
-                        message = "Expired Code! Please try again"
+                        message = "Verification word has expired! Please request it again."
                     }
                     self.hideView()
-                    self.showAlert(title: "Error", message: message, completion: nil)
+                    self.showAlert(title: "Error", message: "Too many wrong retries! Please request a verification word again.", completion: nil)
                 }
                 break
             }
