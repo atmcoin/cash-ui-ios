@@ -23,7 +23,10 @@ class VerifyCashCodeViewController: ActionViewController {
             switch result {
             case .success(let response):
                 self.view.endEditing(true)
-                let cashCode = (response.data?.items?.first)!
+                guard let cashCode = response.data?.items?.first else {
+                    self.showAlert(title: "Error", message: "Something went wrong! Please try again.", completion: nil)
+                    break
+                }
                 self.actionCallback?.withdrawal(requested: cashCode)
                 
                 let transaction = CoreTransaction(status: .SendPending,
