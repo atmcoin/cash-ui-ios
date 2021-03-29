@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CashCore
 
 class ActivityTableViewCell: UITableViewCell {
     

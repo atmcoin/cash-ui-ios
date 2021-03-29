@@ -5,18 +5,9 @@
         "package": "CashCore",
         "repositoryURL": "https://github.com/atmcoin/cash-sdk-ios.git",
         "state": {
-          "branch": null,
-          "revision": "68c5467a4483ce3f787064081be54ae05f7d00ed",
-          "version": "5.1.0"
-        }
-      },
-      {
-        "package": "CashUI",
-        "repositoryURL": "https://github.com/atmcoin/cash-ui-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "36fc793951e5c9fb6cf0bad124bbd966b0d44c4f",
-          "version": "5.1.7"
+          "branch": "feature/kyc",
+          "revision": "af4c9a0d7fc5a127b36eabb2dc112c803e15a555",
+          "version": null
         }
       }
     ]

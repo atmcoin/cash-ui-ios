@@ -125,23 +125,21 @@ class SendVerificationCodeViewController: ActionViewController {
 }
 
 extension SendVerificationCodeViewController {
-
+    
     private func populateUserInfo() {
-        do {
-            let storedUser: CoreUser? = try UserDefaults.standard.getUser()
-            if let user = storedUser {
-                firstNameTextField.text = user.firstName
-                lastNameTextField.text = user.lastName
-                phoneNumberTextField.text = user.phoneNumber
-            }
-        } catch {}
+        guard let data = CoreSessionManager.shared.client!.getData() else {
+            return
+        }
+        firstNameTextField.text = data[kFirstName]
+        lastNameTextField.text = data[kLastName]
+        phoneNumberTextField.text = data[kPhoneNumber]
     }
     
     private func saveUserInfo(firstName: String, lastName: String, phoneNumber: String) {
-        let user = CoreUser(firstName: firstName, lastName: lastName, phone: phoneNumber)
-        do {
-            try UserDefaults.standard.setUser(user)
-        } catch {}
+//        let user = CoreUser(firstName: firstName, lastName: lastName, phone: phoneNumber)
+//        do {
+//            try UserDefaults.standard.setUser(user)
+//        } catch {}
     }
     
 }

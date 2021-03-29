@@ -1,5 +1,6 @@
 
 import UIKit
+import CashCore
 import CashUI
 
 class FirstViewController: UIViewController {

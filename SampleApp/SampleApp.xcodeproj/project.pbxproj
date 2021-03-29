@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		B39EC70D25D5B2A1001898B1 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B3A5194426029304008EC667 /* cash-ui-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "cash-ui-ios"; path = ..; sourceTree = "<group>"; };
 		B3A9EA192527948D00C18CCD /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A9EA1C2527948D00C18CCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3A9EA1E2527948D00C18CCD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		B3A9EA102527948D00C18CCD = {
 			isa = PBXGroup;
 			children = (
+				B3A5194426029304008EC667 /* cash-ui-ios */,
 				B3A9EA1B2527948D00C18CCD /* SampleApp */,
 				B3A9EA1A2527948D00C18CCD /* Products */,
 			);
