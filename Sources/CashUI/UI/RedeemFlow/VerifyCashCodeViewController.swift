@@ -37,25 +37,21 @@ class VerifyCashCodeViewController: ActionViewController {
                 self.actionCallback?.actiondDidComplete(action: .cashCodeVerification)
                 break
             case .failure(let error):
-                let errorCode = error.code
+                let errorCode = Int(error.code)
                 var message = "Something went wrong! Please try again."
-                if errorCode.isEmpty {
-                    self.view.endEditing(true)
-                    self.showAlert(title: "Error", message: message, completion: nil)
+                if errorCode == CashCoreErrorCode.wrongVerificationCode.rawValue {
+                    self.tokenTextView.errorText = "Verification word incorrect! Please review and enter it again."
                     break
                 }
-                let cashErrorCode = CashCoreErrorCode(rawValue: Int(errorCode)!)!
-                if cashErrorCode == .wrongVerificationCode {
-                    message = "Verification word incorrect! Please review and enter it again."
-                    self.tokenTextView.errorText = message
+                if (errorCode == CashCoreErrorCode.verificationCodeExpired.rawValue) {
+                    message = "Verification word has expired! Please request it again."
                 }
-                else {
-                    if (cashErrorCode == .verificationCodeExpired) {
-                        message = "Verification word has expired! Please request it again."
-                    }
-                    self.hideView()
-                    self.showAlert(title: "Error", message: "Too many wrong retries! Please request a verification word again.", completion: nil)
+                if (errorCode == CashCoreErrorCode.tooManyVerificationCodeAttempts.rawValue) {
+                    message = "Too many wrong retries! Please request a verification word again."
                 }
+                self.view.endEditing(true)
+                self.showAlert(title: "Error", message: message, completion: nil)
+                self.hideView()
                 break
             }
             
