@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "CashUI",
             dependencies: ["CashCore"],
-            resources: [.process("Resources"), .process("Resources/Other/support.json")]),
+            resources: [.process("Resources"), .process("Resources/support.json")]),
         .testTarget(
             name: "CashUITests",
             dependencies: ["CashUI"]),
