@@ -13,7 +13,7 @@ let package = Package(
             targets: ["CashUI"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
+        // Dependencies declare other packages that this package depends on. 
         .package(name: "CashCore", url: "https://github.com/atmcoin/cash-sdk-ios.git", .upToNextMajor(from: "5.0.0"))
     ],
     targets: [
